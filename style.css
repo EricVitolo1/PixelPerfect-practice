@@ -8,7 +8,6 @@
     border: 0px;
     line-height: 30px;
     justify-content: space-between;
-
 }
 
 .flickrlogo {
@@ -25,7 +24,7 @@
     justify-content: left;
 }
 
-.example2 {
+.example2{
     border: dashed grey 1px;
     border-radius: 16px;
     padding: 16px;
@@ -60,10 +59,32 @@ justify-content:left;
     justify-content: right;
 }
 body {
-    
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    align-items:center;
+    height:900px;
     background-image: url('images/windows-bg.jpg');
     background-repeat: no-repeat;
     background-size: 100%;
     /* padding: 0; */
     margin: 0;
+}
+.links{
+
+    /* margin: 50px; */
+    justify-content: center;
+    border: 1px solid red;
+    background-color: rgba(61, 61, 61, 0.779);
+    width: 100%;
+}
+/* .social{
+
+    align-self:flex-end;
+} */
+
+.footer_class{
+    display:flex;
+    width: 100%;
+    justify-content: space-between;
 }
