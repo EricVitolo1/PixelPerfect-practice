@@ -5,3 +5,20 @@
     display: flex;
     justify-content: space-between;
 }
+.example2 {
+    border: dashed grey 1px;
+    border-radius: 16px;
+    padding: 16px;
+    /* Phase 2 */
+    /*!!START */
+    display: inline-flex;
+    gap: 8px;
+    align-items: center;
+    /*!!END */
+}
+body {
+    background-image: url('images/windows-bg.jpg');
+
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
