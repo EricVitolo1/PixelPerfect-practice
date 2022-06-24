@@ -1,3 +1,21 @@
+
+html{
+    height: 100%;
+}
+body {
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    align-items: center;
+    height:100%;
+    background-image: url('images/flickr-pic.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    /* padding: 0; */
+    margin: 0;
+    /* flex: 1 0 auto; */
+}
+
 .header-container{
     display: flex;
     border: 1px solid red;
@@ -6,77 +24,68 @@
     padding: 0.85%;
     margin: 0%;
     border: 0px;
-    line-height: 30px;
+    line-height: 33px;
     justify-content: space-between;
 }
 
 .flickrlogo {
-
+    padding-left: 1.5%;
     justify-content: left;
 
 }
+
+
+
+.search-bar{
+    display:flex;
+    border: 0;
+    background-color:rgb(255, 255, 255);
+    border-radius: .25em;
+    width: 55%;
+    justify-content: left;
+}
+
+.glass {
+
+margin-left: 10px;
+
+align-self: center;
+opacity: 50%;
+}
+
+.search-bar-func{
+    /* color: rgba(0, 0, 0, 0); */
+    background-color: rgba(255, 255, 255, 0);
+    justify-content:center;
+    width:90%;
+    border: 0;
+}
+.buttons{
+    display: flex;
+    padding-right: 2%;
+    justify-content: right;
+    width: 15%;
+}
 .flickr-text{
-    font-size:x-large;
-    font-style:bold;
-    font-weight: 900;
+    font-size:175%;
+    font-style: bold;
+    font-weight: 700;
     color: white;
     font-family: 'Segoe UI', 'Roboto', 'Noto Sans', 'Ubuntu', 'Droid Sans', 'Helvetica Neue', sans-serif;
     justify-content: left;
 }
-
-.example2{
-    border: dashed grey 1px;
-    border-radius: 16px;
-    padding: 16px;
-    /* Phase 2 */
-    /*!!START */
-    display: inline-flex;
-    gap: 8px;
-    align-items: center;
-    /*!!END */
-}
-
-.search-bar{
-    border: 1px solid black;
-    background-color:rgba(245, 245, 220, 0.184);
-    border-radius: .25em;
-    width: 80%;
-    justify-content: center;
-}
-.glass {
-margin-top: 5px;
-margin-left: 1px;
-justify-content:left;
-}
-.search-bar-func{
-    /* color: rgba(0, 0, 0, 0); */
-    background-color: rgb(255, 255, 255);
-    justify-content:center;
-    width:90%;
-}
-.buttons{
-
-    justify-content: right;
-}
-body {
-    display:flex;
-    flex-direction:column;
-    justify-content:space-between;
-    align-items:center;
-    height:900px;
-    background-image: url('images/windows-bg.jpg');
-    background-repeat: no-repeat;
-    background-size: 100%;
-    /* padding: 0; */
-    margin: 0;
-}
 .links{
-
+    display:flex;
     /* margin: 50px; */
-    justify-content: center;
     border: 1px solid red;
+    align-items: center;
     background-color: rgba(61, 61, 61, 0.779);
     width: 100%;
+    justify-content:space-around;
+}
+.links > span{
+    justify-content:space-around;
+    border: 1px solid blue;
 }
 /* .social{
 
@@ -86,5 +95,27 @@ body {
 .footer_class{
     display:flex;
     width: 100%;
-    justify-content: space-between;
+    justify-content:space-around;
+    align-self: stretch;
+}
+
+.login{
+    background-color: #4caf4f00;
+    border: none;
+    color: white;
+    padding-right: 20%;
+    font-size: 15px;
+    font-style: bold;
+    font-weight: 200%;
+
+}
+
+.sign_up{
+    background-color: white;
+    border: none;
+    color: rgba(51, 51, 51, 0.508);
+    border-radius:10%;
+    width: 100%;
+    height: 80%;
+    text-align:center;
 }
